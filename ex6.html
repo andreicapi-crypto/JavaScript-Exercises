@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Square root?</h1>
+<p id="whot"></p>
+<body>
+<script>
+    const question=confirm("Should I calculate the square root?")
+    if (question===true){
+        const crazynr=prompt("Add number:")
+        const realnr=parseInt(crazynr)
+        const root=Math.sqrt(realnr)
+        document.querySelector('#whot').innerHTML="The root of "+realnr +" is "+ root
+    }
+    else if (question===false){
+      document.querySelector('#whot').innerHTML="The square root is not calculated"
+    }
+
+</script>
+
+</body>
+</html>

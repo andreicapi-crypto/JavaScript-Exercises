@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IDK</title>
+    </head>
+
+    <body>
+        <h1>Barbut</h1>
+        <p id="barbut"></p>
+        <script>
+            const rolls = parseInt(prompt("How many times to roll?"))
+            function dice() {
+                return Math.floor(Math.random() * 6) + 1;
+            }
+
+            let total = 0;
+            for (let i = 0; i < rolls; i++) {
+                total += dice();
+            }
+            document.querySelector("#barbut").innerHTML = "Roll value is " + total;
+            console.log(total);
+        </script>
+    </body>
+</html>

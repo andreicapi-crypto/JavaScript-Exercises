@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>AGE</h1>
+<p id="age"></p>
+<script>
+    const year=prompt("when were you born?")
+    if (year%100===0 && year%400===0 || year%4===0){
+        document.querySelector('#age').innerHTML=year+" is a leap year"
+    }
+    else{
+         document.querySelector('#age').innerHTML=year+" is not a leap year"
+    }
+
+
+</script>
+
+</body>
+</html>

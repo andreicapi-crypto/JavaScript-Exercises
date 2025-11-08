@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<p id="output"></p>
+
+    <script>
+      const nr1=prompt("First number: ")
+      const nr2=prompt("Second number: ")
+      const nr3=prompt("Third number: ")
+      const nro1=parseInt(nr1)
+      const nro2=parseInt(nr2)
+      const nro3=parseInt(nr3)
+      const sum=nro1+nro2+nro3
+      const pro=nro1*nro2*nro3
+      const aritm=sum/3
+      let outlook="Sum is " + sum + "<br>Product is " + pro + "<br>Average is " + aritm
+      document.querySelector('#output').innerHTML =outlook;
+
+    </script>
+
+</body>
+</html>
